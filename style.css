@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header .menu-container{
+    background-color: #1B2430;
+}
+
+header .menu-container div{
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+}
+/* Cibler le ul dans la nav enfant du header */
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+/* Factorissez les selecteurs */ /*  12 = haut + bas */
+header nav a{
+    display: block;
+    padding: 41px 16px;
+    text-decoration: none;
+    color: white;   
+}
+/* la ligne sous les liens / offset éloignier le trait */
+header nav li:first-of-type a{
+    text-decoration: underline 2px;
+    text-underline-offset: 8px;
+}
+/* Pour centrer le logo d'autre option comme la position absolue */
+header div img{
+    height: 50px;
+    width: 67px;
+}
+
+header img{
+    width: 100%;
+}
+
+/* Body */
+.main{
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 50px ;
+    padding-bottom: 50px;
+}
+
+.main div{
+    display: flex;
+}
+
+.right{
+    width: 100%;
+    margin-left: 30px;
+    
+}
+
+.article{
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+} 
+/* Les "boutons" */ 
+.type{
+    background-color: #D6D5A8;
+    color: #1B2430;
+    padding: 16px;
+    margin: 12px;
+    border-radius: 10px;
+}
+
+.date{
+    background-color: #1B2430;
+    color: #FFFFFF;
+    padding: 16px;
+    margin: 12px;
+    border-radius: 10px;
+}
+/*  Bas de la page */
+footer{
+    background-color: #1B2430;
+    color: #FFFFFF;
+}
+
+#contacts{
+    display: flex;
+    justify-content: space-evenly;
+}
+#contacts section ul{
+    list-style: none;
+    
+}
+
+#contacts section a{
+    color: #D9D9D9;
+    text-decoration: none;
+}
+
+
+footer p{
+    margin-top: 25px;
+    padding-left: 30px;
+}
+
+footer hr{
+    margin: 15px;
+}
