@@ -26,7 +26,8 @@ header nav a{
     display: block;
     padding: 41px 16px;
     text-decoration: none;
-    color: white;   
+    color: white;  
+    font-family: "Montserrat", serif;
 }
 /* la ligne sous les liens / offset éloignier le trait */
 header nav li:first-of-type a{
@@ -81,15 +82,17 @@ header img{
 } 
 /*La Typographie */
 .article h2{
-    font-weight: bold;
-    font-size: 36px;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
     letter-spacing: 3px;
     line-height: 41px;
 }
 
 .article div p{
-    font-weight: medium;
-    font-size: 18px;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
     letter-spacing: 3px;
     line-height: auto;
     margin-top: 21px;
@@ -97,8 +100,9 @@ header img{
 }
 
 .article p:nth-of-type(3){
-    font-weight: normal;
-    font-size: 20px;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
     line-height: 30;
 }
 /* Séparation de thème */ 
@@ -116,7 +120,7 @@ main #ceinture div{
     text-transform: uppercase;
     margin: auto;
 }
-/* 28 g / 19 d */
+
 #ceinture .break{
     background-color: black;
     width: 100%;
@@ -160,6 +164,9 @@ footer{
 }
 #contacts section ul{
     list-style: none;  
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 #contacts section a{
@@ -167,18 +174,55 @@ footer{
     text-decoration: none;
 }
 
+#contacts section h2{
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* Texte apres les listes */
 footer p{
     display: flex;
     justify-content: center;
+    font-family: "Montserrat", serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 footer hr{
     margin: 15px;
 }
-/* les fonts */
+/* Les fonts */
 /* Roboto */
-
+.roboto-thin {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
 /* Montserrat */ 
 .montserrat {
   font-family: "Montserrat", serif;
@@ -186,3 +230,32 @@ footer hr{
   font-style: normal;
 } 
 /* Responsive */
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: #f0f0f0;
+    }
+    .main {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1024px)  {
+    body {
+        background-color: #e0e0e0;
+    }
+    .main {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .menu-container {
+        width: 100%;
+        padding: 10px;
+    }
+}
