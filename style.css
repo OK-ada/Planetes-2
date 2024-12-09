@@ -19,6 +19,7 @@ header .menu-container div{
 header nav ul{
     display: flex;
     list-style: none;
+    
 }
 /* Factorissez les selecteurs */ /*  12 = haut + bas */
 header nav a{
@@ -43,11 +44,14 @@ header img{
 }
 
 /* Body */
+
 .main{
     max-width: 1200px;
     margin: auto;
     padding-top: 50px ;
     padding-bottom: 50px;
+    font-family: "Roboto";
+    
 }
 
 .main div{
@@ -75,21 +79,45 @@ header img{
     align-items:center ;
     margin-bottom: 63px;
 } 
+/*La Typographie */
+.article h2{
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 3px;
+    line-height: 41px;
+}
+
+.article div p{
+    font-weight: medium;
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: auto;
+    margin-top: 21px;
+    margin-bottom: 19px;
+}
+
+.article p:nth-of-type(3){
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30;
+}
 /* Séparation de thème */ 
 
 #ceinture{
     display: flex;
     align-items: center;
+    margin-top: 108px;
+    margin-bottom: 45px;
 }
 main #ceinture div{
     width: 100%;
 }
 #ceinture div p{
-    margin: auto;
     text-transform: uppercase;
+    margin: auto;
 }
-
-.break{
+/* 28 g / 19 d */
+#ceinture .break{
     background-color: black;
     width: 100%;
     height: 1px;
@@ -103,6 +131,13 @@ main #ceinture div{
     border-radius: 10px;
 }
 
+.type-sous{
+    background-color: #816797;
+    color: #FFFFFF;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+}
+
 .date{
     background-color: #1B2430;
     color: #FFFFFF;
@@ -110,7 +145,7 @@ main #ceinture div{
     margin-left: 1.125rem;
     border-radius: 10px;
 }
-/*  Bas de la page */
+/*  Bas de page */
 footer{
     background-color: #1B2430;
     color: #FFFFFF;
@@ -121,6 +156,7 @@ footer{
     justify-content: space-evenly;
     max-width: 1200px;
     margin: auto;
+    padding-top: 45px;
 }
 #contacts section ul{
     list-style: none;  
@@ -131,12 +167,22 @@ footer{
     text-decoration: none;
 }
 
-/* Texte aprs les listes */
+/* Texte apres les listes */
 footer p{
-    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 footer hr{
     margin: 15px;
 }
-/* Rsponsive */
+/* les fonts */
+/* Roboto */
+
+/* Montserrat */ 
+.montserrat {
+  font-family: "Montserrat", serif;
+  font-weight: 100;
+  font-style: normal;
+} 
+/* Responsive */
