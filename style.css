@@ -230,6 +230,15 @@ footer hr{
   font-style: normal;
 } 
 /* Responsive */
+@media only screen and (max-width: 1024px)  {
+    body {
+        background-color: #e0e0e0;
+    }
+    .main {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
 @media only screen and (max-width: 768px) {
     body {
         background-color: #f0f0f0;
@@ -240,15 +249,6 @@ footer hr{
     }
 }
 
-@media only screen and (max-width: 1024px)  {
-    body {
-        background-color: #e0e0e0;
-    }
-    .main {
-        width: 85%;
-        margin: 0 auto;
-    }
-}
 @media only screen and (max-width: 600px) {
     body {
         font-size: 14px;
